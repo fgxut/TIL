@@ -55,6 +55,7 @@ PHP を使用する場合、以下のため、MPM は prefork にする。
 
 ## Bench
 
+- <https://httpd.apache.org/docs/2.4/programs/ab.html>
 - <https://qiita.com/flexfirm/items/ac5a2f53cfa933a37192>
 - <https://qiita.com/wifecooky/items/1fc87bcdf6fdcf80637e>
 
