@@ -1,6 +1,14 @@
 # SQS
 
+- <https://aws.amazon.com/jp/sqs/faqs/>
+- <https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configuring.html>
+- <https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-how-it-works.html>
+
 ## 留意事項
+
+### ベストプラクティス
+
+<https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-best-practices.html>
 
 ### ショートポーリングとロングポ－リング
 
@@ -17,6 +25,12 @@
 >   - Long polling is preferable over short polling in most cases.
 
 <https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/reducing-costs.html#using-appropriate-polling-modeg>
+
+> Q: Amazon SQS ロングポーリングとは何ですか?
+Amazon SQS ロングポーリングは、Amazon SQS キューからメッセージを取得する方法です。通常のショートポーリングは、ポーリングされたメッセージキューが空であっても直ちに応答を返しますが、ロングポーリングではメッセージがメッセージキューに達するか、ロングポーリングがタイムアウトになるまで応答を返しません。
+ロングポーリングの場合、Amazon SQS キューでメッセージを利用できるようになった時点ですぐに、そのメッセージを低コストで取り出せます。ロングポーリングを使用すると、何も受信しない回数が減るため、SQS の使用コストが下がります。
+
+<https://aws.amazon.com/jp/sqs/faqs/>
 
 その他参考記事
 
