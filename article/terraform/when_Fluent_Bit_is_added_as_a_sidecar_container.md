@@ -2,7 +2,7 @@
 
 Terraform で AWS Fargate のタスク定義に カスタムログルーティング（FireLens）用の Fluent Bit をサイドカーコンテナとして追加した場合、タスク定義を何も変更していないにもかかわらず、なぜか`terraform plan`時に`changed`が必ず発生してしまいます。
 
-``` terraform
+```hcl
 ~ {
     - essential              = true -> null
     - mountPoints            = [] -> null
@@ -36,7 +36,7 @@ Fluent Bit コンテナで差分が発生しているパラメータをすべて
 
 以下は Fluent Bit コンテナに`user = "0"`を追加した例です。
 
-``` json
+```json
 {
   "name" : "log-router",
   "image" : "public.ecr.aws/aws-observability/aws-for-fluent-bit:latest",
