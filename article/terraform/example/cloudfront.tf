@@ -62,7 +62,7 @@ resource "aws_cloudfront_distribution" "example" {
     }
 
     # Reference: https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/Expiration.html
-    min_ttl                = 0     # Default
+    min_ttl                = 0        # Default
     default_ttl            = 86400    # Default
     max_ttl                = 31536000 # Default
     compress               = true
@@ -89,7 +89,7 @@ resource "aws_cloudfront_distribution" "example" {
     }
 
     # Reference: https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/Expiration.html
-    min_ttl                = 0     # Default
+    min_ttl                = 0        # Default
     default_ttl            = 86400    # Default
     max_ttl                = 31536000 # Default
     compress               = true
