@@ -1,3 +1,9 @@
+# 参考：
+#  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution
+#  https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html
+#
+# "XXXX"は考慮不要
+
 resource "aws_cloudfront_distribution" "example" {
   enabled             = true # Required
   comment             = ""
