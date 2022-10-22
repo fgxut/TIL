@@ -13,7 +13,7 @@ resource "aws_cloudfront_distribution" "example" {
   web_acl_id          = ""
 
   tags = {
-    env = ""
+    Name = ""
   }
 
   # Required
