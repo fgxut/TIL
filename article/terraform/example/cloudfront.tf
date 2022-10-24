@@ -48,7 +48,7 @@ resource "aws_cloudfront_distribution" "example" {
     target_origin_id = ""                                                           # Required
     allowed_methods  = ["GET", "HEAD", "OPTIONS", "PUT", "POST", "PATCH", "DELETE"] # Required
     cached_methods   = ["GET", "HEAD"]                                              # Required
-    # 参考: https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html
+    # Reference: https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html
     # cache_policy_id  = ""
 
     # If a cache policy is required, use cache_policy_id instead.
@@ -75,7 +75,7 @@ resource "aws_cloudfront_distribution" "example" {
     target_origin_id = ""                                                           # Required
     allowed_methods  = ["GET", "HEAD", "OPTIONS", "PUT", "POST", "PATCH", "DELETE"] # Required
     cached_methods   = ["GET", "HEAD"]                                              # Required
-    # 参考: https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html
+    # Reference: https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html
     # cache_policy_id  = ""
 
     # If a cache policy is required, use cache_policy_id instead.
